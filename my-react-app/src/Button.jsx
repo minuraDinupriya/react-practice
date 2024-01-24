@@ -1,14 +1,20 @@
 
 
 export function Button(){
-    const handleClicks=()=>{
-        console.log("ouch");
+    let count=0;
+    const handleClicks=(name)=>{
+        if(count<3){
+            count++;
+            console.log(`${name} you clicked me ${count} times`)
+        }else{
+            console.log(`${name} is clicking me`)
+        }
     }
 
     const handleClicks2=(name)=>{
         console.log(`${name} stop clicking me`)
     }
     return(
-        <button onClick={()=>handleClicks2("minura")}>Click me</button>
+        <button onClick={()=>handleClicks("minura")}>Click me</button>
     );
 }
