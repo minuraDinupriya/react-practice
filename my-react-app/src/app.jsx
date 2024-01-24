@@ -1,11 +1,11 @@
-import { Student } from "./Student";
+import { Button } from "./Button";
+
 
 
 export function App() {
     return(
         <>
-            <Student name="Bob" age={30} isStudent={true}/>
-            <Student name="Patrick" age={42} isStudent={false}/>
+            <Button/>
         </>
     );
 }
