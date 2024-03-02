@@ -59,7 +59,7 @@ export default function Board() {
   );
 }
 
-
+//
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
