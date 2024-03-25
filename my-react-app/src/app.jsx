@@ -62,7 +62,7 @@ function Board() {
 export default function Game(){////
   return(
     <div className="game">
-      <div className="game-board">
+      <div className="game-board">//
         <Board></Board>
       </div>
 
